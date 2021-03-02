@@ -22,6 +22,7 @@ let notes = [
 const app = express()
 app.use(cors())
 app.use(express.json())
+app.use(express.static('dist'))
 
 app.get('/', (req, res) => {
 	res.send('<h1>Hello World!</h1>')
