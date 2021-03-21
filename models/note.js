@@ -1,10 +1,8 @@
+require('dotenv').config()
 const mongoose = require('mongoose')
-// eqW6qilAWbcGRIDf
 
-const password = process.argv[2]
+// const password = process.argv[2]
 const url = process.env.MONGODB_URI
-
-// const url = `mongodb+srv://scribblerdw:${password}@cluster0.ccrmykj.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0`
 
 mongoose.set('strictQuery', false)
 mongoose
